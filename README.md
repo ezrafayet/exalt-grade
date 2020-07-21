@@ -19,5 +19,5 @@ By default the grades are between 0 and 5, but you can pass a new minimum / maxi
 * [x] Define needed functions 
 * [x] Build mathematic model - -
 * [ ] Improve it by integrating js + ts - -
-* [x] Write the doc - -
+* [ ] Write the doc - -
 * [ ] Add unit testing - -
