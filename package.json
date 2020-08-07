@@ -1,0 +1,32 @@
+{
+  "name": "exalt-grade",
+  "version": "0.0.1",
+  "description": "Slightly exalt grades while keeping the order ( [a, b] -> [a, b] and a < b -> f(a) < f(b) )",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --file dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adzaria/exalt-grade.git"
+  },
+  "keywords": [
+    "grades",
+    "exalt",
+    "improve",
+    "better"
+  ],
+  "author": "adzaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adzaria/exalt-grade/issues"
+  },
+  "homepage": "https://github.com/adzaria/exalt-grade#readme",
+  "devDependencies": {
+    "@types/mocha": "^8.0.1",
+    "@types/node": "^14.0.27",
+    "mocha": "^8.1.1",
+    "typescript": "^3.9.7"
+  }
+}

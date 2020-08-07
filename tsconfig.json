@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "lib": ["es2016"],
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

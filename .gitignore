@@ -1,2 +1,9 @@
-# Created by .ignore support plugin (hsz.mobi)
+
+build/
+dist/
+
+# MODULES
+node_modules
+
+# IDE
 .idea
