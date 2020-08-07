@@ -21,6 +21,7 @@ By default exaltation is 28 and grades are between 0 and 5, but you can pass new
 
 * [x] Define functions 
 * [x] Build mathematic model (polynomial translation, acts like a bijective translation on the considered interval)
+* [ ] Allow to pass an array of grades
 * [ ] Only return one decimal max
 * [ ] Build the npm package with js + ts
 * [ ] Write the doc
