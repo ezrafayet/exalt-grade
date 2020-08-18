@@ -1,10 +1,10 @@
-# exalt-grade
+# exalt-grade package
 
 Pass a grade, get a better one.
 
 # Under the hood
 
-Bijective translation to slightly exhale grades while keeping order.
+Bijective translation (obtained by applying a second degree polynomial on the range [minimumGrade, maximumGrade]) to slightly exhale grades while keeping order.
 
 * [a, b] -> [a, b]
 * a < b => f(a) < f(b)
