@@ -1,23 +1,54 @@
 # exalt-grade
 
-Bijective translation to slightly exhale grades while keeping the order ( [a, b] -> [a, b] and a < b => f(a) < f(b) )
-
 Pass a grade, get a better one.
 
+# Under the hood
 
-## How to use it ?
+Bijective translation to slightly exhale grades while keeping order.
+
+* [a, b] -> [a, b]
+* a < b => f(a) < f(b)
+
+# How to use it ?
 
 Pass a grade, pass an exaltation rate and get a better grade while keeping your grades order for fairness
 
-     
+## Install it
+
+```
+    npm i exalt-grade
+```
+
+## Import it
+
+```
+    const exaltGrade = require("exalt-grade").exaltGrade;
+    
+    or
+    
+    import {exaltGrade} from "exalt-grade";
+```
+
+## Use it out of the box
+
+```
     const betterGrade = exaltGrade(oldGrade);
+```
+
+## Use it with custom parameters
 
 By default exaltation is 28 and grades are between 0 and 5, but you can pass new values for the three of them
 
+
+```
+    const betterGrade = exaltGrade(oldGrade, exaltation, minimumGrade, maximumGrade);
+    
+    example :
+    
     const betterGrade = exaltGrade(oldGrade, 35, 0, 100);
+```
 
-
-## Steps
+# Steps
 
 * [x] Define functions 
 * [x] Build mathematic model (polynomial translation, acts like a bijective translation on the considered interval)
