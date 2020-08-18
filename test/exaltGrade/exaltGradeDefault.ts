@@ -1,7 +1,5 @@
-
 import {expect} from "chai";
-import {exaltGrade} from "../src/exaltGrade";
-
+import {exaltGrade} from "../../src/exaltGrade";
 
 export default () => {
   
@@ -16,19 +14,13 @@ export default () => {
   });
   
   it("Grades are always better with 5 random numbers", async() => {
-    
-    
+    // todo
     expect(1).to.equal(1);
-    
   });
   
   it("Order is respected with 5 random numbers", async() => {
-    
-    
+    // todo
     expect(1).to.equal(1);
-    
   });
-  
-  
   
 }

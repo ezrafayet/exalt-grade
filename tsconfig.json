@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./lib",
+    "declaration": true,
     "lib": ["es2016"],
     "sourceMap": true,
     "removeComments": true,

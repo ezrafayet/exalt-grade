@@ -1,6 +1,9 @@
 
 build/
 dist/
+lib/
+
+tsconfig.json
 
 # MODULES
 node_modules
