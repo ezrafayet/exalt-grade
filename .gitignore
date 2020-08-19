@@ -1,6 +1,6 @@
 
 # BUILD DIRECTORY
-libs/
+lib/
 
 # MODULES
 node_modules

@@ -1,9 +1,9 @@
 {
   "name": "exalt-grade",
-  "version": "1.1.0",
+  "version": "1.1.6",
   "description": "Slightly exalt grades while keeping order ( [a, b] -> [a, b] and a < b -> f(a) < f(b) )",
-  "main": "libs/cjs/index.js",
-  "types": "libs/cjs/index.d.ts",
+  "main": "lib/cjs/index.js",
+  "types": "lib/cjs/index.d.ts",
   "scripts": {
     "build": "npm run build:cjs",
     "build:esm": "tsc --build tsconfig-esm.json",
@@ -12,7 +12,7 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
     "preversion": "",
-    "version": "npm run format && git add -A ./libs",
+    "version": "npm run format && git add -A lib",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -32,7 +32,9 @@
   "bugs": {
     "url": "https://github.com/adzaria/exalt-grade/issues"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "homepage": "https://github.com/adzaria/exalt-grade#readme",
   "devDependencies": {
     "@types/chai": "^4.2.12",
