@@ -1,7 +1,1 @@
-
-
-import exaltGrade from "./exaltGrade";
-
-export {exaltGrade};
-
-// export = exaltGrade;
+export * from "./exaltGrade";

@@ -1,12 +1,13 @@
 /**
- * a-better-grade, not saying you need better grades
- * @description Boost grades but keep the order (default: 5 star ratings)
- * @version 0.5
+ * exalt-grade
+ * @description Boost grades while keeping order
+ * @version 1
  * @author adzaria
  */
 
+export {exaltGrade};
+
 /**
- * - - - - - - - -
  * Checks if the exaltation rate is reasonable
  */
 const isExaltationReasonable = (value: number): boolean => {
@@ -19,7 +20,6 @@ const isExaltationReasonable = (value: number): boolean => {
 }
 
 /**
- * - - - - - - - -
  * Checks if the given grade is in the given range
  */
 const isGradeInRange = (oldGrade: number, minimum: number, maximum: number): boolean => {
@@ -32,7 +32,6 @@ const isGradeInRange = (oldGrade: number, minimum: number, maximum: number): boo
 }
 
 /**
- * - - - - - - - -
  * Checks if order is respected between minimum and maximum
  */
 const isOrderRespected = (minimum: number, maximum: number): boolean => {
@@ -41,7 +40,6 @@ const isOrderRespected = (minimum: number, maximum: number): boolean => {
 }
 
 /**
- * - - - - - - - -
  * Checks if a given value is a number
  */
 const isValueNumber = (value: unknown): value is number => {
@@ -50,7 +48,6 @@ const isValueNumber = (value: unknown): value is number => {
 }
 
 /**
- * - - - - - - - -
  * Given 3 points (x1, y1), (x2, y2), (x3, y3), give coefficients a, b and c  so y = ax^2 + bx + c
  */
 const getCoefficients = (exaltation: number = 28, minimum: number = 0, maximum: number = 5): { a: number, b: number, c: number } => {
@@ -75,13 +72,12 @@ const getCoefficients = (exaltation: number = 28, minimum: number = 0, maximum: 
 }
 
 /**
- * Polynomial transformation
  * @param oldGrade
  * @param exaltation = extra % to give to the average grade, default = 14 (transforms a 2.5 to 3.2)
  * @param minimum default = 0
  * @param maximum default = 5
  */
-function exaltGrade(oldGrade: number, exaltation: number = 28, minimum: number = 0, maximum: number = 5) {
+const exaltGrade = (oldGrade: number, exaltation: number = 28, minimum: number = 0, maximum: number = 5) => {
   
   try {
     
@@ -147,5 +143,3 @@ function exaltGrade(oldGrade: number, exaltation: number = 28, minimum: number =
   }
   
 }
-
-export default exaltGrade;

@@ -1,9 +1,6 @@
 
-build/
-dist/
-lib/
-
-tsconfig-cjs.json
+# BUILD DIRECTORY
+libs/
 
 # MODULES
 node_modules

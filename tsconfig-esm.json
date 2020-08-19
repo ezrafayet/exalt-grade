@@ -1,14 +1,8 @@
 {
+  "extends": "./tsconfig-cjs.json",
   "compilerOptions": {
-    "outDir": "./lib/esm",
-    "declaration": true,
-    "target": "es2020",
-    "lib": ["es2017", "es7", "es6", "dom"],
-    "sourceMap": true,
-    "removeComments": true,
-    "strict": true,
-    "module": "ES2020",
-    "esModuleInterop": true
+    "outDir": "./libs/esm",
+    "target": "es2020"
   },
   "include": [
     "src/**/*.ts"

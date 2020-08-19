@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./lib/cjs",
+    "outDir": "./libs/cjs",
     "declaration": true,
     "target": "es5",
     "lib": ["es2017", "es7", "es6", "dom"],
