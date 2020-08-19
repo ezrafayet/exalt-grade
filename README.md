@@ -6,8 +6,8 @@ Pass a grade, get a better one.
 
 Bijective translation (obtained by generating a second degree polynomial on the range [minimumGrade, maximumGrade]) to slightly exhale grades while keeping order.
 
-* [a, b] -> [a, b]
-* a < b => f(a) < f(b)
+![alt exaltation](https://adzaria.s3.eu-west-3.amazonaws.com/exaltation.jpg)
+
 
 # How to use it ?
 
