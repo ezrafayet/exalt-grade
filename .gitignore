@@ -3,7 +3,7 @@ build/
 dist/
 lib/
 
-tsconfig.json
+tsconfig-cjs.json
 
 # MODULES
 node_modules

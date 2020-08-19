@@ -5,8 +5,6 @@
  * @author adzaria
  */
 
-export {exaltGrade};
-
 /**
  * - - - - - - - -
  * Checks if the exaltation rate is reasonable
@@ -83,7 +81,7 @@ const getCoefficients = (exaltation: number = 28, minimum: number = 0, maximum: 
  * @param minimum default = 0
  * @param maximum default = 5
  */
-const exaltGrade = (oldGrade: number, exaltation: number = 28, minimum: number = 0, maximum: number = 5) => {
+function exaltGrade(oldGrade: number, exaltation: number = 28, minimum: number = 0, maximum: number = 5) {
   
   try {
     
@@ -149,3 +147,5 @@ const exaltGrade = (oldGrade: number, exaltation: number = 28, minimum: number =
   }
   
 }
+
+export default exaltGrade;

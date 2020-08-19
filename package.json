@@ -1,14 +1,19 @@
 {
   "name": "exalt-grade",
-  "version": "1.0.0",
+  "version": "1.0.25",
   "description": "Slightly exalt grades while keeping order ( [a, b] -> [a, b] and a < b -> f(a) < f(b) )",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/cjs/index.js",
+  "types": "lib/esm/index.d.ts",
+  "module": "lib/esm/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build tsconfig-cjs.json && tsc --build tsconfig-esm.json",
     "test": "mocha --file build/test/test.js",
     "test-ts": "mocha -r ts-node/register --file test/test.ts",
-    "ci": "npm run test-ts && npm run build & npm t & wait"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test-ts",
+    "preversion": "",
+    "version": "npm run format && git add .",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",

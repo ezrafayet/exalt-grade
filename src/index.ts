@@ -1,6 +1,7 @@
 
-import {exaltGrade} from "./exaltGrade";
 
-export default exaltGrade;
+import exaltGrade from "./exaltGrade";
 
-Object.assign(module.exports, exaltGrade);
+export {exaltGrade};
+
+// export = exaltGrade;
