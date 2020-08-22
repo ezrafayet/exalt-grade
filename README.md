@@ -1,4 +1,4 @@
-# exalt-grade package
+# exalt-grade
 
 Pass a grade, get a better one.
 
